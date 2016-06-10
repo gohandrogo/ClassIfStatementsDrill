@@ -1,7 +1,6 @@
 package com.tyrellhoxter.com;
 
-import com.tyrellhoxter.com.rules.MoonRules;
-import com.tyrellhoxter.com.rules.Rules;
+import com.tyrellhoxter.com.rules.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +17,9 @@ public class Decision {
     public Decision(){
         rules = new ArrayList<>();
         rules.add(new MoonRules());
+        rules.add(new StarRules());
+        rules.add(new DiamondRules());
+        rules.add(new KanyeRules());
     }
 
     public String getStringFromInput(int input){

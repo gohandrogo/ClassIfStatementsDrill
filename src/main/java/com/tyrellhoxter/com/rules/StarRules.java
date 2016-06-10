@@ -1,18 +1,16 @@
 package com.tyrellhoxter.com.rules;
 
 /**
- * Created by tyrellhoxter on 6/10/16.
+ * Created by alejandrolondono on 6/10/16.
  */
-public class MoonRules implements Rules {
+public class StarRules implements Rules {
 
     @Override
     public boolean condition(int input) {
-
-        return input == 1;
+        return input == 2;
     }
-
     @Override
     public String action() {
-        return "Moon";
+        return "Star";
     }
 }
